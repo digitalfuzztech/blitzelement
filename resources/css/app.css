@@ -1,0 +1,142 @@
+@import 'tailwindcss';
+@import '../../vendor/livewire/flux/dist/flux.css';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
+@source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-zinc-50: #fafafa;
+    --color-zinc-100: #f5f5f5;
+    --color-zinc-200: #e5e5e5;
+    --color-zinc-300: #d4d4d4;
+    --color-zinc-400: #a3a3a3;
+    --color-zinc-500: #737373;
+    --color-zinc-600: #525252;
+    --color-zinc-700: #404040;
+    --color-zinc-800: #262626;
+    --color-zinc-900: #171717;
+    --color-zinc-950: #0a0a0a;
+
+    --color-accent: var(--color-neutral-800);
+    --color-accent-content: var(--color-neutral-800);
+    --color-accent-foreground: var(--color-white);
+}
+
+@layer theme {
+    .dark {
+        --color-accent: var(--color-white);
+        --color-accent-content: var(--color-white);
+        --color-accent-foreground: var(--color-neutral-800);
+    }
+}
+
+@layer base {
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
+
+[data-flux-field]:not(ui-radio, ui-checkbox) {
+    @apply grid gap-2;
+}
+
+[data-flux-label] {
+    @apply  !mb-0 !leading-tight;
+}
+
+input:focus[data-flux-control],
+textarea:focus[data-flux-control],
+select:focus[data-flux-control] {
+    @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
+}
+
+/* \[:where(&)\]:size-4 {
+    @apply size-4;
+} */
+
+/* custom */
+.logo--main{
+    width: 60px;
+}
+
+
+
+.custom-hero--video{
+    width: 100%;
+}
+.logo--main {
+    display: block;
+    width: auto;
+    height: 3.6rem;
+}
+
+.logo--dark {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .logo--main {
+        height: 4rem;
+    }
+}
+html[color-scheme="light"] .logo--light {
+    display: block;
+}
+
+html[color-scheme="light"] .logo--dark {
+    display: none;
+}
+
+html[color-scheme="dark"] .logo--light {
+    display: none;
+}
+
+html[color-scheme="dark"] .logo--dark {
+    display: block;
+}
+.switcher-text{
+    display: none !important;
+}
+html[color-scheme="dark"] .hero--background {
+    background: radial-gradient(rgba(1,107,17,1), black);
+}
+html[color-scheme="light"] .hero--background {
+    background: radial-gradient(rgba(1,107,17,1) ,white);
+}
+
+.custom-nav-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.custom-nav-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay-nav-custom {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    background: radial-gradient(
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+    );
+}
+
+.footer--custom-font{
+
+}

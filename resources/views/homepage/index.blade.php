@@ -1,0 +1,18 @@
+@extends('layouts.app')
+@section('title', 'Home')
+@section('content')
+    <x-blur-effect />
+    @include('homepage.sections.hero')
+    @include('homepage.sections.about')
+    @include('homepage.sections.statistics')
+    @include('homepage.sections.niche-cards')
+    @include('homepage.sections.parallax')
+    @include('homepage.sections.services')
+    @include('homepage.sections.projects')
+    @include('homepage.sections.team')
+    @include('homepage.sections.tech-stack')
+    @include('homepage.sections.parallax')
+    @include('homepage.sections.testimonials')
+    @include('homepage.sections.blog')
+    @include('homepage.sections.cta')
+@endsection
