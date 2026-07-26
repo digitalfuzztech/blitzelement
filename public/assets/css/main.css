@@ -119,7 +119,7 @@
   --base-tint-rgb--light: 249, 247, 247;
   --base-bright--light: #ffffff;
   --base-bright-rgb--light: 255, 255, 255;
-  --accent--light: #002bba;
+  --accent--light: #023904;
   --highlight--light: #819ffe;
   --base-opp--light: #0f0f0f;
   --base-opp-rgb--light: 15, 15, 15;
@@ -151,7 +151,7 @@
   --base-tint-rgb--dark: 23, 23, 25;
   --base-bright--dark: #000000;
   --base-bright-rgb--dark: 0, 0, 0;
-  --accent--dark: #002bba;
+  --accent--dark: #023904;
   --highlight--dark: #002bba;
   --base-opp--dark: #EEEAE8;
   --base-opp-rgb--dark: 238, 234, 232;

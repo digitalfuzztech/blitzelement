@@ -4,7 +4,7 @@
         <div class="mxd-divider">
             <!-- image -->
             <div class="mxd-divider__image divider-image-1 parallax-img">
-                <!-- <img class="parallax-img" src="img/illustrations/1920x1080_divider-01.webp" alt=""> -->
+               <img class="parallax-img" src="{{asset('assets/img/parallax/2.jpg')}}" alt="">
             </div>
             <!-- cover layer -->
             <div class="mxd-divider__cover cover-04"></div>

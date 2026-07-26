@@ -9,7 +9,7 @@
                     <div class="mxd-teaser__wrap">
                         <div class="mxd-teaser__content">
                             <div class="mxd-teaser__btngroup anim-uni-in-up">
-                                <a class="btn btn-line btn-line-default" href="about-me.html">
+                                <a class="btn btn-line btn-line-default" href="{{route('about')}}">
                                     <span class="btn-caption mxd-scramble">About Us</span>
                                 </a>
                             </div>
@@ -19,7 +19,7 @@
                                     <span class="mxd-teaser__text">We Are</span>
                                     <span class="mxd-teaser__icon">
                         <i>
-                          <img src="https://dummyimage.com/150x150/5d5d5d/838383" alt="Azurio Icon">
+                          <img src="{{asset('assets/img/icons/fire-green.png')}}" alt="Azurio Icon" class="custom--about-icon">
                         </i>
                       </span>
                                     <span class="mxd-teaser__text">designs</span>
@@ -35,7 +35,7 @@
                                     <span class="mxd-teaser__text">Creative</span>
                                     <span class="mxd-teaser__icon">
                         <i>
-                          <img src="https://dummyimage.com/150x150/5d5d5d/838383" alt="Azurio Icon">
+                          <img src="{{asset('assets/img/icons/lightning-bolt-green.png')}}" alt="Azurio Icon" class="custom--about-icon">
                         </i>
                       </span>
                                     <span class="mxd-teaser__text">experiences</span>

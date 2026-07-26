@@ -6,12 +6,12 @@
             <div class="mxd-hero-07__top">
                 <div class="mxd-hero-07__headline mxd-grid-item">
                     <div class="mxd-hero-07__subtitle loading-item">
-                        <a class="btn btn-line btn-line-default" href="contact.html">
+                        <a class="btn btn-line btn-line-default" href="{{route('contact')}}">
                             <span class="btn-caption mxd-scramble">Let's Chat</span>
                         </a>
                     </div>
                     <div class="mxd-hero-07__title">
-                        <a class="active-cursor-accent" data-cursor-text="Let's Chat" href="contact.html">
+                        <a class="active-cursor-accent" data-cursor-text="Let's Chat" href="{{route('contact')}}">
                             <h1 class="small loading-split">We Believe in Blitz<br>Output</h1>
                         </a>
                     </div>

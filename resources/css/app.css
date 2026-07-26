@@ -137,6 +137,28 @@ html[color-scheme="light"] .hero--background {
     );
 }
 
-.footer--custom-font{
-
+.custom--about-icon{
+    width: 40px;
+}
+.custom--cta-accent{
+    background: #026619 !important;
+}
+.custom--products-bg{
+    background: #026619;
+    padding-bottom: 3rem;
+}
+.custom--inner-pages-hero{
+    padding-top: 64px;
+}
+.custom--contact-font{
+    font-size: 8cqw;
+}
+@media only screen and (min-width: 992px) {
+    .fullwidth-text__content.custom--contact-font
+{
+    font-size: 8cqw;
+}
+}
+.custom--padding-bottom{
+    padding-bottom: 64px;
 }

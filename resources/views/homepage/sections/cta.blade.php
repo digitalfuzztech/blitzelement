@@ -4,7 +4,7 @@
 
         <!-- Block - CTA with Matter.js Objects Start -->
         <div class="mxd-block">
-            <div class="mxd-promo mxd-gravity-section accent">
+            <div class="mxd-promo mxd-gravity-section accent custom--cta-accent">
                 <div class="mxd-promo__wrap">
                     <div class="mxd-promo__objects object-container">
                         <div class="object object-permanent">
